@@ -1,11 +1,13 @@
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-all_df = pd.read_csv(r"C:\Users\1815\Downloads\Dicoding\Dashboard\all_data.csv")
+all_df = pd.read_csv(r"all_data.csv")
 
 st.title("Air Quality Analysis")
 
